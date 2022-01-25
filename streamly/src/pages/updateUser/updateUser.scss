@@ -1,0 +1,91 @@
+.updateUser {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #abbaab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #abbaab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #abbaab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  .wrapper {
+    width: 500px;
+    height: 500px;
+    box-shadow: 11px 10px 10px -2px rgba(54, 33, 33, 0.49);
+    -webkit-box-shadow: 11px 10px 10px -2px rgba(54, 33, 33, 0.49);
+    -moz-box-shadow: 11px 10px 10px -2px rgba(54, 33, 33, 0.49);
+    border: 2px solid red;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+
+    color: white;
+
+    .top {
+      display: flex;
+      margin: 30px;
+
+      .backButton {
+        font-size: 30px;
+        position: relative;
+        top: 5px;
+        margin-right: 15px;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .inputs {
+        margin: 20px;
+        width: 300px;
+        // border: 2px solid red;
+
+        label {
+          color: #9191e5;
+        }
+      }
+
+      .username {
+        input {
+          position: relative;
+          left: 25px;
+        }
+      }
+      .email {
+        input {
+          position: relative;
+          left: 55px;
+        }
+      }
+      .password {
+        input {
+          position: relative;
+          left: 20px;
+        }
+      }
+
+      .btn {
+        width: 300px;
+        height: 30px;
+        color: red;
+        font-weight: bold;
+        background-color: rgb(200, 192, 192);
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}

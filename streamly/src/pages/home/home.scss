@@ -1,0 +1,13 @@
+.home{
+    display: flex;
+
+    .leftSection{
+        flex: 2;
+    }
+
+
+    .rightSection{
+        // background-color: rgb(82, 79, 79);
+        flex: 10;
+    }
+}

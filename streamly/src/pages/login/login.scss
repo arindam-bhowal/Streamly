@@ -1,0 +1,117 @@
+.loginContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a1ffce;
+  background: -webkit-linear-gradient(to left, #faffd1, #a1ffce);
+  background: linear-gradient(to left, #faffd1, #a1ffce);
+
+  .wrapper {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(141, 163, 204, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(200, 182, 182, 0.125);
+    width: 400px;
+    height: 450px;
+
+    .info {
+      .top {
+        .logo {
+          color: red;
+          font-weight: 900;
+          margin: 15px;
+          font-size: 40px;
+        }
+      }
+
+      .bottom {
+        h2 {
+          color: blue;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .formContainer {
+      text-align: center;
+
+      .login {
+        .inputs {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          input {
+            margin: 5px;
+            background: none;
+            border: none;
+            border-bottom: 1px solid black;
+            font-size: 20px;
+            transition: all 0.5s ease;
+            height: 50px;
+
+            &:focus {
+              outline: none;
+
+              &::placeholder{
+                  color: red;
+                  transform: translateY(-20px);
+                  font-size: 15px;
+              }
+            }
+          }
+        }
+        .checkbox {
+          margin: 15px;
+
+          input {
+            margin: 5px;
+          }
+          span {
+            margin: 1px;
+          }
+        }
+
+        .btn{
+            background-color: blue;
+            border: none;
+            width: 100px;
+            font-size: 20px;
+            padding: 5px;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.1);
+                color: coral;
+            }
+        }
+        .forgotPassword{
+            display: block;
+            margin-top: 10px;
+            color: navy;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .register{
+            p{
+                margin-top: 10px;
+                color:  rgb(37, 18, 18);
+
+                span{
+                    color: red;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+      }
+    }
+  }
+}

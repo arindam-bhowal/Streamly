@@ -1,0 +1,61 @@
+.featured {
+  position: relative;
+
+  .infoBox {
+    position: absolute;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .title {
+      h1 {
+        color: white;
+        font-size: 40px;
+        font-weight: 900;
+        margin: 30px;
+      }
+    }
+
+    .desc {
+      margin: 30px;
+      width: 700px;
+      color: white;
+    }
+    .infoIcons {
+      display: flex;
+      position: relative;
+      left: 30px;
+
+      .iconContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1px;
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(17, 25, 40, 0.75);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+
+        &:hover{
+            .icon{
+                color: white;
+            }
+        }
+
+        .icon {
+            font-size: 30px;
+          margin: 30px;
+        }
+      }
+    }
+  }
+  .featureBox {
+    img {
+      border-radius: 5px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
