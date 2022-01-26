@@ -1,11 +1,15 @@
 import { ArrowBack } from '@mui/icons-material';
 import './updateUser.scss';
+import { useNavigate } from 'react-router-dom';
 
 const UpdateUser = () => {
+
+    const navigate = useNavigate()
+
     return <div className='updateUser'>
         <div className="wrapper">
             <div className="top">
-                <ArrowBack className='backButton' />
+                <ArrowBack className='backButton' onClick={() => { navigate(-1) }} />
                 <h1>Edit Profile</h1>
             </div>
             <form >

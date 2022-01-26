@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './login.scss';
 
 const Login = () => {
@@ -27,7 +28,10 @@ const Login = () => {
                     <span className='forgotPassword'>forgot password ?</span>
                     <div className="register">
                         <p>New to Streamly
-                            <span> Sign Up</span> now!!
+                            <Link to='/register' >
+                                <span> Sign Up</span>
+                            </Link>
+                            now!!
                         </p>
                     </div>
                 </form>

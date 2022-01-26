@@ -1,4 +1,5 @@
 import { Edit, Search } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 import './topbar.scss';
 
 const Topbar = () => {
@@ -13,7 +14,9 @@ const Topbar = () => {
                     <img src="/assets/blankProfilePic.png" alt="" />
                 </div>
                 <div className="rightSectionIcon">
-                    <Edit className='icon' />
+                    <Link to='/update'>
+                        <Edit className='icon' />
+                    </Link>
                 </div>
             </div>
         </div>

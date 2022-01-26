@@ -1,12 +1,15 @@
 import './sidebar.scss'
 import { DirectionsRunOutlined, FavoriteBorderOutlined, FindInPageOutlined, HistoryToggleOffOutlined, LocalFireDepartmentOutlined, LogoutOutlined, MenuBookOutlined, MoodBadOutlined, PsychologyOutlined, ScienceOutlined, TheaterComedyOutlined } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <div className='sidebar'>
       <div className="sidebarTop">
         <div className="title">Streamly</div>
-        <LogoutOutlined className='logoutIcon' />
+        <Link to='/login'>
+          <LogoutOutlined className='logoutIcon' />
+        </Link>
       </div>
 
       <div className="sidebarBottom">
